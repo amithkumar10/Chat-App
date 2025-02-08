@@ -14,7 +14,7 @@ app.use(express.json());
 const prisma = new PrismaClient(); // Initialize Prisma Client
 app.use(
   cors({
-    origin: "https://chat-hyihqufbu-amith-kumars-projects.vercel.app",
+    origin: "*",
     credentials: true,
     methods: ["GET", "POST", "DELETE", "PUT"],
   })
