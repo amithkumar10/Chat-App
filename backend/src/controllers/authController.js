@@ -121,7 +121,7 @@ export const verifyOtp = async (req, res) => {
     res.cookie("IAMIN", token, {
       httpOnly: true,
       secure: true,
-      sameSite: "Lax",
+      sameSite: "None",
       maxAge: 24 * 60 * 60 * 1000,
     });
 
@@ -145,7 +145,7 @@ export const logout = (req, res) => {
   res.cookie("IAMIN", "", {
     expires: new Date(0),
     httpOnly: true,
-    secure: false,
+    secure: true,
   });
   res.json("Logged out");
 };
