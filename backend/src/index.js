@@ -14,7 +14,7 @@ app.use(express.json());
 const prisma = new PrismaClient(); // Initialize Prisma Client
 app.use(
   cors({
-    origin: "*",
+    origin: ["http://localhost:5173", "https://chat-app-kappa-ecru.vercel.app"],
     credentials: true,
     methods: ["GET", "POST", "DELETE", "PUT"],
   })
