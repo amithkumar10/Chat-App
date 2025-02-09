@@ -60,6 +60,7 @@ const Login = () => {
           name="email"
           onChange={handleChange}
           mb={3}
+          w={64}
         />
 
         <Input
@@ -70,6 +71,7 @@ const Login = () => {
           value={formData.password}
           onChange={handleChange}
           mb={3}
+          w={64}
         />
 
         <Text
