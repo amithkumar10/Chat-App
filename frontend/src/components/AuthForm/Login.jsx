@@ -70,7 +70,6 @@ const Login = () => {
           value={formData.password}
           onChange={handleChange}
           mb={3}
-          w={64}
         />
 
         <Text
